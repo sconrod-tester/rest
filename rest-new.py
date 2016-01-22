@@ -22,11 +22,6 @@ def get_notes_directory(request):
     resp = json.dumps(files, indent=2)
     return Response(resp, content_type='application/json')    
 
-    query = request.GET
-    n = float(query.get('n', '0'))
-    fibo = Fibo(n).fibo()
-    resp = json.dumps(fibo)
-    return Response(resp, content_type='application/json')     
 
 @get('/fibo_num')                      # curl http://localhost:8080/fibo_num?n=11.1
 def fibo_num(request):
