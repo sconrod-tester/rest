@@ -29,6 +29,7 @@ Status:
 
 The rest api when started returns a welcome message and it also prompts at thattime to enter in a numerical value - however, I need remove this prompt from the rest api startup and just make a curl query to the rest api return the prompt- this is in progress.
 
+-If more time will make small app using Flask or Tornado etc
 
 ubuntu@ubuntu:~/rest$ python rest-new.py
 Enter a positive numerical value: 6
