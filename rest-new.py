@@ -32,7 +32,7 @@ def get_notes_directory(request):
 def fibo_num(request):
     query = request.GET
     n = float(query.get('n', '0'))
-    fibo = Fibo(n)
+    fibo = fibo(n)
     resp = json.dumps(fibo)
     return Response(resp, content_type='application/json') 
 
