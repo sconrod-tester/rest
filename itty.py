@@ -1,10 +1,10 @@
 from itty import *
 import subprocess, time, os, json
-from func_get_n import n
+#from func_get_n import n
 
 @get('/')
 def welcome(request):
-    return 'Howdy!'
+    return 'Welcome!'
 
 @get('/now')
 def get_time(request):
